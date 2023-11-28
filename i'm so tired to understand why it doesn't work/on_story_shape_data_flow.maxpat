@@ -40,11 +40,23 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 468.0, 1011.5, 53.0, 22.0 ],
+					"text" : "pack f f i"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-12",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 951.0, 847.0, 38.0, 22.0 ],
+					"patching_rect" : [ 1025.0, 801.0, 38.0, 22.0 ],
 					"text" : "poly~"
 				}
 
@@ -62,36 +74,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-89",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 468.0, 1032.0, 34.0, 22.0 ],
-					"text" : "pack"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-88",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 468.0, 1058.0, 51.0, 22.0 ],
 					"text" : "sampler"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-87",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 2,
-					"outlettype" : [ "float", "float" ],
-					"patching_rect" : [ 468.0, 1003.5, 61.0, 22.0 ],
-					"text" : "makenote"
 				}
 
 			}
@@ -2443,6 +2431,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-88", 0 ],
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
 					"source" : [ "obj-23", 0 ]
 				}
@@ -2627,14 +2622,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-87", 0 ],
+					"destination" : [ "obj-21", 0 ],
 					"source" : [ "obj-74", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-87", 2 ],
+					"destination" : [ "obj-21", 1 ],
 					"source" : [ "obj-77", 0 ]
 				}
 
@@ -2664,29 +2659,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-87", 1 ],
+					"destination" : [ "obj-21", 2 ],
 					"source" : [ "obj-80", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-89", 1 ],
-					"source" : [ "obj-87", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-89", 0 ],
-					"source" : [ "obj-87", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-88", 0 ],
-					"source" : [ "obj-89", 0 ]
 				}
 
 			}
@@ -2699,7 +2673,7 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-88::obj-6::obj-20" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-88::obj-29::obj-6::obj-20" : [ "live.gain~", "live.gain~", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
@@ -2760,14 +2734,14 @@
 			}
 , 			{
 				"name" : "filter.maxpat",
-				"bootpath" : "~/Desktop/Myclasses/advanced-cao/Deadlines/final piece-deadline2",
+				"bootpath" : "~/Desktop/Myclasses/advanced-cao/Deadlines/final piece-3",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "multiband.pfft.maxpat",
-				"bootpath" : "~/Desktop/Myclasses/advanced-cao/Deadlines/final piece-deadline2",
+				"bootpath" : "~/Desktop/Myclasses/advanced-cao/Deadlines/final piece-3",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -2778,14 +2752,22 @@
 			}
 , 			{
 				"name" : "sampler.maxpat",
-				"bootpath" : "~/Desktop/Myclasses/advanced-cao/Deadlines/final piece-deadline2",
+				"bootpath" : "~/Desktop/Myclasses/advanced-cao/Deadlines/final piece-3",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "samplervoicemidicents~.maxpat",
-				"bootpath" : "C74:/docs/tutorial-patchers/msp-tut",
+				"name" : "sampler_unit.maxpat",
+				"bootpath" : "~/Desktop/Myclasses/advanced-cao/Deadlines/final piece-3",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sampler_unit_poly.maxpat",
+				"bootpath" : "~/Desktop/Myclasses/advanced-cao/Deadlines/final piece-3",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
