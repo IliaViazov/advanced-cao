@@ -40,6 +40,42 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-40",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 586.0, 547.0, 133.0, 22.0 ],
+					"text" : "metro 50000 @active 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-39",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 591.0, 580.0, 41.0, 22.0 ],
+					"text" : "play 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 468.0, 1041.0, 79.0, 22.0 ],
+					"text" : "prepend note"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-21",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
@@ -56,7 +92,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 468.0, 1044.0, 51.0, 22.0 ],
+					"patching_rect" : [ 468.0, 1073.0, 51.0, 22.0 ],
 					"text" : "sampler"
 				}
 
@@ -2265,6 +2301,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-88", 0 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-70", 4 ],
 					"source" : [ "obj-120", 0 ]
 				}
@@ -2397,7 +2440,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-88", 0 ],
+					"destination" : [ "obj-12", 0 ],
 					"source" : [ "obj-21", 0 ]
 				}
 
@@ -2462,6 +2505,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-33", 1 ],
 					"source" : [ "obj-38", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-70", 0 ],
+					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-39", 0 ],
+					"source" : [ "obj-40", 0 ]
 				}
 
 			}
@@ -2663,7 +2720,7 @@
 , 			{
 				"name" : "bach.f2mc.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/bach/patchers",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/bach/patchers",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/bach/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -2674,7 +2731,7 @@
 , 			{
 				"name" : "bach.mc2f.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/bach/patchers",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/bach/patchers",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/bach/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -2700,14 +2757,14 @@
 			}
 , 			{
 				"name" : "filter.maxpat",
-				"bootpath" : "~/Desktop/Myclasses/advanced-cao/Deadlines/final piece-3",
+				"bootpath" : "~/Desktop/Myclasses/advanced-cao/i'm so tired to understand why it doesn't work",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "multiband.pfft.maxpat",
-				"bootpath" : "~/Desktop/Myclasses/advanced-cao/Deadlines/final piece-3",
+				"bootpath" : "~/Desktop/Myclasses/advanced-cao/i'm so tired to understand why it doesn't work",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -2718,21 +2775,14 @@
 			}
 , 			{
 				"name" : "sampler.maxpat",
-				"bootpath" : "~/Desktop/Myclasses/advanced-cao/Deadlines/final piece-3",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sampler_unit.maxpat",
-				"bootpath" : "~/Desktop/Myclasses/advanced-cao/Deadlines/final piece-3",
+				"bootpath" : "~/Desktop/Myclasses/advanced-cao/i'm so tired to understand why it doesn't work",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sampler_unit_poly.maxpat",
-				"bootpath" : "~/Desktop/Myclasses/advanced-cao/Deadlines/final piece-3",
+				"bootpath" : "~/Desktop/Myclasses/advanced-cao/i'm so tired to understand why it doesn't work",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -2740,7 +2790,7 @@
 , 			{
 				"name" : "urn-jb.maxpat",
 				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/max-tricks/random_with_no_repeat",
-				"patcherrelativepath" : "../../../../../Library/Application Support/Cycling '74/Max 8/Examples/max-tricks/random_with_no_repeat",
+				"patcherrelativepath" : "../../../../Library/Application Support/Cycling '74/Max 8/Examples/max-tricks/random_with_no_repeat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
