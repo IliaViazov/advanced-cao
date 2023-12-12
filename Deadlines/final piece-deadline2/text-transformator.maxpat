@@ -40,6 +40,203 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-58",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 490.0, 427.0, 72.0, 22.0 ],
+					"text" : "prepend set"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-57",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 490.0, 401.0, 39.0, 22.0 ],
+					"text" : "zl.join"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-56",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 494.75, 273.0, 29.5, 22.0 ],
+					"text" : "t b l"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-55",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 486.5, 314.0, 42.0, 22.0 ],
+					"text" : "goto 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-54",
+					"maxclass" : "newobj",
+					"numinlets" : 5,
+					"numoutlets" : 4,
+					"outlettype" : [ "int", "", "", "int" ],
+					"patching_rect" : [ 486.5, 342.0, 61.0, 22.0 ],
+					"text" : "counter"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-53",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 552.0, 342.0, 25.0, 22.0 ],
+					"text" : "iter"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-52",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "dictionary", "", "", "" ],
+					"patching_rect" : [ 491.0, 464.0, 77.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "dict separate"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-49",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 828.5, 781.0, 150.0, 20.0 ],
+					"text" : "<= english text"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-46",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 772.0, 780.0, 45.0, 22.0 ],
+					"text" : "49 122"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-36",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 852.0, 691.5, 150.0, 33.0 ],
+					"text" : "<= русский текст диапазон"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 786.0, 691.5, 64.0, 22.0 ],
+					"text" : "1041 1103"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-32",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 364.0, 660.0, 43.0, 22.0 ],
+					"text" : "zlclear"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-30",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 481.0, 697.0, 41.0, 22.0 ],
+					"text" : "zl.sort"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 360.0, 618.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 481.0, 672.0, 57.0, 22.0 ],
+					"text" : "list.group"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 466.0, 234.0, 37.0, 22.0 ],
+					"text" : "zl.len"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "button",
 					"numinlets" : 1,
@@ -70,7 +267,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 36.0, 301.0, 24.0, 24.0 ]
+					"patching_rect" : [ 24.0, 301.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -83,7 +280,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 120.5, 488.0, 355.0, 49.0 ],
-					"text" : "that and fake Ukraine the economic military \"900\" \"0\" by connection operations. number prepare conscientious by wave were \"4\" \"2022\""
+					"text" : "ужасно несогласие действия с в \"15\" маразматической что рассудке этом даже это главные странам Шутки украинской бог удивлюсь понятие что"
 				}
 
 			}
@@ -94,8 +291,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 36.0, 331.0, 119.0, 22.0 ],
-					"text" : "metro 200 @active 1"
+					"patching_rect" : [ 24.0, 331.0, 126.0, 22.0 ],
+					"text" : "metro 1000 @active 1"
 				}
 
 			}
@@ -138,13 +335,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-3",
-					"linecount" : 53,
+					"linecount" : 35,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 655.0, 29.5, 456.0, 719.0 ],
-					"text" : "From Wikipedia, the free encyclopedia Following the Russian invasion of Ukraine that started in late February 2022, more than 300, 0 Russian citizens and residents are estimated to have left Russia by mid-March 2022, at least 500, 0 by the end of August 2022, and an additional 400, 0 by early October, for a total of approximately 900, 0. This number includes economic migrants, conscientious objectors, and some political refugees. There have been at least three waves of Russian emigration In the first wave, immediately after Russia invaded Ukraine in February 2022, journalists, politicians, and tech workers fled. Many sought to evade criminal prosecution for exercising free speech regarding the invasion. In March, President Vladimir Putin introduced prison sentences of up to 15 years for publishing \"fake news\" about Russian military operations. More than 2, 0 people were charged by May 2022 under the laws prohibiting fake information about the military. As of December 2022, more than 4, 0 people were prosecuted under \"fake news\" laws in connection with the war in Ukraine. A second wave became apparent by July 2022, and this wave consisted more generally of middle and upper class people and parents who had required longer to prepare to emigrate, for example;\rpeople with businesses or people who had to wait for their children's school year to end. Following Putin's announcement of partial mobilization on 21 September 2022, a third wave of Russian emigration began, with estimates of hundreds of thousands of male citizens fleeing. In the first week after the announcement, 98, 0 Russians fled to Kazakhstan. On 24 September alone over 8, 500 Russians entered Finland by land, a 62% increase on the previous Saturday. On the following day, it was reported that \"On the border with Georgia, queues of Russian cars stretch back more than 30 kilometers,\" while at checkpoints bordering the regions of Kostanay and Western Kazakhstan, \"footage of cars queuing to leave Russia show lines that stretch as far as the eye can see.\" In this third wave alone, nearly 300, 0 Russian citizens had left Russia before 27 September, with that number approaching 400, 0 by 4 October. An upper estimate is for 700, 0 Russians to have fled conscription since it was announced. Many went to Kazakhstan, Serbia, Turkey, the United Arab Emirates, Georgia, Armenia and Finland. Other major destinations include Azerbaijan, the United Arab Emirates, Greece, Bulgaria, Romania, Kyrgyzstan, Uzbekistan, Spain, Israel, Tajikistan, Mongolia, Latin American countries, the Baltic states, Canada and the United States. On 16 March, President Vladimir Putin issued a warning to Russian traitors, claiming that the West \"wanted to use them as a fifth column\" and that Russians would always be able to \"distinguish the true patriots from the scum and the traitors.\" While some experts said Putin's ire was directed toward what he perceived to be wavering loyalty among Russian elites, and in particular, Russian oligarchs, statements from Kremlin officials have also broadly labeled those who fled as traitors, as spokesman Dmitry Peskov affirmed the following day to Reuters: \"In such difficult times…Many people show their true colors…They vanish from our lives themselves. Some people are leaving their posts. Some are leaving their active work life. Some leave the country and move to other countries. That is how this cleansing happens.\" On 4 November 2022, Dmitry Medvedev, the deputy secretary of Russia's Security Council, called the Russians who fled Russia after the invasion \"cowardly traitors\" and said that Russia was \"stronger and cleaner\" without them. On 28 December 2022, he said that Russians who fled Russia after the invasion of Ukraine and are opposed to the war should be labeled \"enemies of society\" and barred from returning to Russia. Medvedev called for the use of death squads against politically active Russian exiles. In January 2023, Russian lawmaker Yevgeny Popov proposed canceling the passports of Russians who fled abroad after Russia invaded Ukraine. Vyacheslav Volodin, speaker of the State Duma, called the anti-war Russians in exile scoundrels and wanted the confiscation of their properties in Russia"
+					"patching_rect" : [ 655.0, 29.5, 497.0, 478.0 ],
+					"text" : "Im so fucking tired of this insane crap thats going on in my home country Its not even clear where to start talking About how I am terribly ashamed of the actions of my state which discredits every concept of common sense and intelligence Or about how our leadership very carefully selects its supporters Or should I start to talk about how you can get up to 15 years in prison for disagreeing with the official government policy regarding the war in Ukraine Or talk about the law on foreign agents because of which hundreds of people have already been illegally convicted and subjected to political persecution prison and anathema Or about how the Ministry of Justice banned the LGBT community considering it an extremist organization Probably seriously thinking that somewhere there is the main headquarters of the LGBT community with their elected president and God forbid there are fair elections this is not the common Russian way who distributes gays around the world in accordance with the some distribution plan by every country Jokes aside the law that banned the LGBT community is precisely about this I wouldnt be surprised if these nonhumans think so Of course the main enemies for our state are LGBT people But you can happily release criminals giving them an amnesty personally from the president for participating in the bloodshed of innocent Ukrainian blood They can be released to home with a clear conscience after six months of military service and given the opportunity to commit new crimes about which there is already enough news to say that this is a problem But gays lesbians transgender people and other queerpeople should definitely be imprisoned for 12 years for promoting their way of life or rather simply existing The funniest thing about this situation is that now our parliament wants to seriously begin the same discussion but about feminism The Russian Orthodox Church made a statement that this is a natural process of moral selfdefense of society because LGBT destroys traditional family values in a country in which domestic violence is almost legal and may never reach the point of prosecution by law But at the same time you can bless Russian soldiers for killing Ukrainians and broadcast that this is a just cause dragging in everything from the Nazis to the Antichrist this is normal Ugh fuck fucking idiots it would be better for them not to fucking speak out Just please think about the terms of this state A bad person is someone who disagrees with official policy who does not correspond to some traditional Russian values that no longer exist A good person is someone who agrees with the authorities loves them and has committed military and civil crimes Thats all you need to know about this idiotic system Everything you need to understand what a Russian citizen who still has the common sense not to agree with this system is going through right now Its just absurd that has moved from the category of a satirical comedy about the state into a terrible antiutopian fairy tale"
 				}
 
 			}
@@ -305,7 +502,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 391.0, 264.0, 39.0, 22.0 ],
+					"patching_rect" : [ 391.0, 262.0, 39.0, 22.0 ],
 					"text" : "zl.join"
 				}
 
@@ -349,6 +546,13 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-6", 1 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-101", 0 ],
 					"source" : [ "obj-100", 0 ]
 				}
@@ -364,6 +568,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
+					"order" : 1,
+					"source" : [ "obj-101", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-55", 0 ],
+					"order" : 0,
 					"source" : [ "obj-101", 1 ]
 				}
 
@@ -405,8 +618,38 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
+					"destination" : [ "obj-30", 0 ],
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"order" : 0,
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"order" : 1,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"source" : [ "obj-32", 0 ]
 				}
 
 			}
@@ -454,8 +697,76 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-41", 1 ],
+					"destination" : [ "obj-25", 0 ],
+					"order" : 1,
 					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-41", 1 ],
+					"order" : 2,
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-56", 0 ],
+					"order" : 0,
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-54", 0 ],
+					"order" : 1,
+					"source" : [ "obj-53", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-57", 1 ],
+					"order" : 0,
+					"source" : [ "obj-53", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-57", 0 ],
+					"source" : [ "obj-54", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-54", 0 ],
+					"source" : [ "obj-55", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 0 ],
+					"source" : [ "obj-56", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-58", 0 ],
+					"source" : [ "obj-57", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-52", 0 ],
+					"source" : [ "obj-58", 0 ]
 				}
 
 			}
@@ -517,14 +828,23 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
+					"destination" : [ "obj-16", 0 ],
 					"source" : [ "obj-9", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-52", 0 ],
+					"order" : 0,
+					"source" : [ "obj-90", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-60", 0 ],
+					"order" : 1,
 					"source" : [ "obj-90", 0 ]
 				}
 
