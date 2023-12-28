@@ -1031,9 +1031,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 4,
-					"outlettype" : [ "signal", "", "", "" ],
-					"patching_rect" : [ 290.0, 352.0, 206.0, 22.0 ],
-					"text" : "poly~ sampler_unit_poly 20 @steal 1"
+					"outlettype" : [ "multichannelsignal", "", "", "" ],
+					"patching_rect" : [ 290.0, 352.0, 225.0, 22.0 ],
+					"text" : "mc.poly~ sampler_unit_poly 20 @steal 1"
 				}
 
 			}
