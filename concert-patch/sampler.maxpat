@@ -40,13 +40,13 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-1",
+					"id" : "obj-4",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 760.0, 454.5, 58.0, 22.0 ],
-					"text" : "loadbang"
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 599.5, 454.5, 216.0, 22.0 ],
+					"text" : "r choosing_the_sample_characteristics"
 				}
 
 			}
@@ -58,7 +58,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 820.0, 489.0, 143.0, 22.0 ],
-					"text" : "-426. perc_voice 0 500 1"
+					"text" : "-687. perc_voice 0 500 1"
 				}
 
 			}
@@ -80,7 +80,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 119.0, 640.0, 480.0 ],
+						"rect" : [ 34.0, 99.0, 1444.0, 849.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -698,7 +698,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 663.0, 236.0, 50.0, 62.0 ],
-					"text" : "5574. perc_voice 0 500 1"
+					"text" : "-687. perc_voice 0 500 1"
 				}
 
 			}
@@ -770,7 +770,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 820.0, 454.5, 146.0, 22.0 ],
-					"text" : "5574. perc_voice 0 500 1"
+					"text" : "5313. perc_voice 0 500 1"
 				}
 
 			}
@@ -782,7 +782,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 820.0, 425.5, 159.0, 22.0 ],
-					"text" : "4374. perc_voice 0 500 1"
+					"text" : "4113. perc_voice 0 500 1"
 				}
 
 			}
@@ -794,7 +794,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 820.0, 394.5, 143.0, 22.0 ],
-					"text" : "3174. perc_voice 0 500 1"
+					"text" : "2913. perc_voice 0 500 1"
 				}
 
 			}
@@ -806,7 +806,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 820.0, 367.5, 143.0, 22.0 ],
-					"text" : "1974. perc_voice 0 500 1"
+					"text" : "1713. perc_voice 0 500 1"
 				}
 
 			}
@@ -819,7 +819,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 820.0, 326.5, 134.0, 35.0 ],
-					"text" : "774. perc_voice 0 500 1"
+					"text" : "513. perc_voice 0 500 1"
 				}
 
 			}
@@ -827,7 +827,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1031,9 +1031,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 4,
-					"outlettype" : [ "signal", "", "", "" ],
-					"patching_rect" : [ 290.0, 352.0, 206.0, 22.0 ],
-					"text" : "poly~ sampler_unit_poly 20 @steal 1"
+					"outlettype" : [ "multichannelsignal", "", "", "" ],
+					"patching_rect" : [ 290.0, 352.0, 225.0, 22.0 ],
+					"text" : "mc.poly~ sampler_unit_poly 20 @steal 1"
 				}
 
 			}
@@ -1041,7 +1041,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-11",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1052,13 +1052,6 @@
 			}
  ],
 		"lines" : [ 			{
-				"patchline" : 				{
-					"destination" : [ "obj-42", 0 ],
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-53", 0 ],
 					"source" : [ "obj-11", 0 ]
@@ -1090,6 +1083,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
 					"source" : [ "obj-38", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-42", 0 ],
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
@@ -1256,35 +1256,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "bach.args.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "bach.expr.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "bach.mc2f.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/bach/patchers",
-				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/bach/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "bach.portal.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "sampler_unit_poly.maxpat",
-				"bootpath" : "~/Desktop/Myclasses/advanced-cao/concert-patch",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
