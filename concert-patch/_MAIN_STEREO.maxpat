@@ -9173,24 +9173,13 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-11",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 398.5, 40.5, 150.0, 20.0 ],
-									"text" : "<= have to do"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-9",
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 358.5, 40.5, 33.0, 22.0 ],
-									"text" : "read"
+									"patching_rect" : [ 358.5, 40.5, 89.0, 22.0 ],
+									"text" : "read voice.wav"
 								}
 
 							}
@@ -9819,6 +9808,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-34",
@@ -12549,8 +12539,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 496.0, 53.0, 33.0, 22.0 ],
-									"text" : "read"
+									"patching_rect" : [ 496.0, 53.0, 84.0, 22.0 ],
+									"text" : "read perc.wav"
 								}
 
 							}
